@@ -8,12 +8,12 @@
 
 The gostore provides the following:
 
-* **InMemory** - whole data stored in-memory 
-  bute persistent data to disk and
-  after restart, **load whole data to memory**
+* **InMemory** - whole data stored in-memory also 
+persistent data to disk and  after restart, load whole data to memory
 
-* **Mode** - gostore have some different mode (**WriteConcurrency**, (**ReadConcurrency(**, **ReadWriteConcurrency**, **RwLock**, **Lockless**) to for choice correct hashmap data structure 
-for better performance 
+* **Mode** - gostore have some different mode 
+(**WriteConcurrency**, (**ReadConcurrency**, **ReadWriteConcurrency**, **RwLock**, **Lockless**) 
+to for choice correct hashmap data structure for better performance 
 
 
 ```
