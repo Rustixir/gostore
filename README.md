@@ -23,10 +23,10 @@ defer st1.Shutdown()
 
 // Different Mode
 
-// st := NewStorage("name 2", "", 0, mode.WriteConcurrency)
+// st := NewStorage("name_2", "", 0, mode.WriteConcurrency)
 // defer st.Shutdown()
 
-// st := NewStorage("name 3", "", 0, mode.ReadWriteConcurrency)
+// st := NewStorage("name_3", "", 0, mode.ReadWriteConcurrency)
 // defer st.Shutdown()
 
 
