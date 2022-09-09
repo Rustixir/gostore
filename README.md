@@ -30,35 +30,34 @@ defer st1.Shutdown()
 // defer st.Shutdown()
 
 
-    // Insert
-    err = st1.Insert(key3, value)
-	if err != nil {
-		// ...
-	}
+// Insert
+err = st1.Insert(key3, value)
+if err != nil {
+	// ...
+}
 
 
-    // Get
-	_, ok := st1.Get(key)
-	if !ok {
-		// ...
-	}
+// Get
+_, ok := st1.Get(key)
+if !ok {
+	// ...
+}
 
 
-    // Search 
-	keys := []string{key2, key3}
-	list := st1.Search(1, 2, func(s string, i interface{}) bool {
-		for _, key := range keys {
-			if s == key {
-				return true
-			}
+// Search 
+keys := []string{key2, key3}
+list := st1.Search(1, 2, func(s string, i interface{}) bool {
+	for _, key := range keys {
+		if s == key {
+			return true
 		}
+	}
+	return false
+})
 
-		return false
-	})
 
-
-    // Delete
-	st1.Delete(key)
+// Delete
+st1.Delete(key)
 
 
 ```
