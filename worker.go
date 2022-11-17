@@ -12,7 +12,7 @@ func NewWorker(path string, bufSize uint32) (chan WalRequest, error) {
 	}
 
 	chann := make(chan WalRequest, bufSize)
-	go start(log, chann)
+	start(log, chann)
 
 	return chann, nil
 }
